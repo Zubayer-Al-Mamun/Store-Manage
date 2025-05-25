@@ -1,5 +1,5 @@
 import { useReducer, useState } from "react";
-import { cartReducer, initialState } from "./Reducer/cartReducer";
+import { cartReducer, initialState } from "./reducer/cartReducer";
 import AllProducts from "./components/allProducts";
 import AnnouncementBar from "./components/announcementBar";
 import CartItem from "./components/CartItem";
