@@ -14,6 +14,7 @@ function App() {
   const [isAnnouncement, setIsAnnouncement] = useState(true);
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
+  
   return (
     <CartContext.Provider value={state}>
       <CartDispatchContext.Provider value={dispatch}>
