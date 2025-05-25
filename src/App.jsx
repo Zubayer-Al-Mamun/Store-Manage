@@ -8,7 +8,7 @@ import MainContHead from "./components/mainContHead";
 import NewsLetterSection from "./components/newsLetterSection";
 import OrderSummary from "./components/orderSummary";
 import { CartContext, CartDispatchContext } from "./context/CartContext";
-import { initialState, cartReducer } from "./reducer/cartReducer";
+import { initialState, cartReducer } from "./Reducer/CartReducer";
 
 function App() {
   const [isAnnouncement, setIsAnnouncement] = useState(true);
