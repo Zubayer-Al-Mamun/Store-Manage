@@ -8,13 +8,14 @@ import MainContHead from "./components/mainContHead";
 import NewsLetterSection from "./components/newsLetterSection";
 import OrderSummary from "./components/orderSummary";
 import { CartContext, CartDispatchContext } from "./context/CartContext";
-import { cartReducer, initialState } from "./reducer/cartReducer";
+import { initialState } from "./reducer/cartReducer";
+import cartReducer from './reducer/cartReducer';
 
 function App() {
   const [isAnnouncement, setIsAnnouncement] = useState(true);
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
-  
+
   return (
     <CartContext.Provider value={state}>
       <CartDispatchContext.Provider value={dispatch}>
