@@ -7,6 +7,7 @@ export const initialState = {
 };
 
 
+
 export function cartReducer(state, action) {
   switch (action.type) {
     case "search": {
@@ -23,6 +24,7 @@ export function cartReducer(state, action) {
         noFound: filtered.length === 0,
       };
     }
+
 
     case "sort": {
       const sorted = [...state.products];
